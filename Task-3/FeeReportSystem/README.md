@@ -1,19 +1,15 @@
-Fee Report System
-------------------
+# Fee Report System
 
-Login Credentials
------------------
-**Use these credentials to log in**
+USE THIS CREDENTIALS TO RUN
 
-Admin Login:
-_____________
-Username: root
-Password: root
+## **Login Details**
+
+### **Admin Login**
+- **Username:** `root`
+- **Password:** `root`
+
+### **Accountant Login**
+- **Email:** `root@gmail.com`
+- **Password:** `root`
 
 
-Accountant Login:
-_________________
-Email: root@gmail.com
-Password: root
-======================================
-enter these credentials when prompted!
