@@ -93,9 +93,9 @@ public class AdminPanel {
         int status = AccountantDAO.update(acc);
 
         if (status > 0) {
-            System.out.println("✅ Accountant updated successfully!");
+            System.out.println("Accountant updated successfully!");
         } else {
-            System.out.println("❌ Accountant update failed!");
+            System.out.println("Accountant update failed!");
         }
     }
 
@@ -106,9 +106,9 @@ public class AdminPanel {
 
         int status = AccountantDAO.delete(id);
         if (status > 0) {
-            System.out.println("✅ Accountant deleted successfully!");
+            System.out.println("Accountant deleted successfully!");
         } else {
-            System.out.println("❌ Accountant deletion failed!");
+            System.out.println("Accountant deletion failed!");
         }
     }
 }
