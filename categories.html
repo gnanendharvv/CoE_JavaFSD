@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - NextGen Sphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Categories Section */
+        .categories {
+            width: 80%;
+            margin: 40px auto;
+            line-height: 1.8;
+        }
+
+        /* Individual Category Box */
+        .category {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 60px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Title Style */
+        .category h2 {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            margin: -25px -25px 20px -25px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 22px;
+        }
+
+        /* Paragraph Text */
+        .category p {
+            color: #333;
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1D3557;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>News Categories</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories">
+            <h2 style="text-align: center;">Explore Categories</h2>
+
+            <div class="category">
+                <h2><a href="India.html" style="color: white; text-decoration: none;">India</a></h2>
+                <p>India is a land of rich history, vibrant culture, and dynamic politics. 
+                From breaking news on government policies to inspiring stories of common people, we cover it all. 
+                Discover updates on economic trends, social movements, and technological advancements. 
+                Whether it’s politics, sports, or lifestyle—stay informed about everything shaping India today.</p>
+            </div>
+
+            <div class="category">
+                <h2><a href="World.html" style="color: white; text-decoration: none;">World</a></h2>
+                <p>Stay connected with global affairs, from major political events to economic trends. 
+                Read about diplomatic relations, climate change, and technological revolutions worldwide. 
+                Get insights on international policies, major conflicts, and cultural shifts. 
+                Whether it's space exploration, global crises, or business deals—we bring you the latest.</p>
+            </div>
+
+            <div class="category">
+                <h2><a href="Movies.html" style="color: white; text-decoration: none;">Movies</a></h2>
+                <p>Dive into the world of cinema, from Hollywood to Bollywood and beyond. 
+                Read exclusive interviews, behind-the-scenes stories, and upcoming releases. 
+                Explore movie reviews, box office hits, and hidden gems worth watching. 
+                Whether you love thrillers, rom-coms, or sci-fi, we’ve got recommendations for all.</p>
+            </div>
+
+            <div class="category">
+                <h2><a href="Sport.html" style="color: white; text-decoration: none;">Sport</a></h2>
+                <p>For sports enthusiasts, we bring match highlights, player stats, and expert analysis. 
+                Follow major tournaments like the FIFA World Cup, Cricket World Cup, and the Olympics. 
+                Get real-time updates, post-match insights, and exclusive player interviews. 
+                From football to cricket to Formula 1, we keep you updated with every goal and victory.</p>
+            </div>
+
+            <div class="category">
+                <h2><a href="Business.html" style="color: white; text-decoration: none;">Business</a></h2>
+                <p>Navigate the world of business with market updates, stock trends, and financial insights. 
+                Learn about startup success stories, investment tips, and emerging industries. 
+                Discover expert takes on economic policies, corporate strategies, and entrepreneurship. 
+                Whether you’re an investor, entrepreneur, or enthusiast, stay ahead in the game.</p>
+            </div>
+
+            <div class="category">
+                <h2><a href="Science.html" style="color: white; text-decoration: none;">Science</a></h2>
+                <p>Explore the universe of scientific discoveries, from AI advancements to medical breakthroughs. 
+                Stay informed on cutting-edge research in physics, space exploration, and biotechnology. 
+                Learn how innovations are shaping the future of humanity and sustainability. 
+                Whether it’s Mars rovers, gene editing, or robotics, we bring science to life.</p>
+            </div>
+
+            <div class="category">
+                <h2><a href="Health.html" style="color: white; text-decoration: none;">Health</a></h2>
+                <p>Health is wealth! Get expert advice on nutrition, fitness, and mental well-being. 
+                Learn about new medical research, alternative healing, and preventive care. 
+                Discover healthy lifestyle habits, workout plans, and diet recommendations. 
+                Whether it’s stress management, weight loss, or disease prevention, we cover it all.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> E-Magazine. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
