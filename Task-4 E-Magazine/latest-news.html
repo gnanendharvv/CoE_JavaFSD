@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - NextGen Sphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Latest - News | NextGen Sphere </h1>
+        <div id="current-date"></div>
+
+        
+    </header>
+
+    <!-- Marquee Advertisement -->
+    <div class="marquee-ad">
+        <marquee behavior="scroll" direction="left">
+            📢 Limited Offer: Subscribe & Get 50% Off! | 🔥 AI Revolution in Tech! | 🚀 SpaceX’s Next Mission Takes Off!
+        </marquee>
+    </div>
+
+    <main>
+
+        <!-- Latest News Section -->
+        <section class="latest-news">
+            
+            <div class="news-grid">
+                <article>
+                    
+                    <h3><a href="article1.html">AI is Changing the Future of Work</a></h3>
+                    <p>Companies invest heavily in AI-driven automation. What does this mean for job markets?</p>
+                    <span class="timestamp">Updated: 15 mins ago</span>
+                </article>
+
+                <article>
+                   
+                    <h3><a href="article2.html">SpaceX Successfully Launches New Rocket</a></h3>
+                    <p>Elon Musk’s company makes history again with its latest space mission.</p>
+                    <span class="timestamp">Updated: 30 mins ago</span>
+                </article>
+
+                <article>
+                 
+                    <h3><a href="article3.html">Global Stock Markets Surge</a></h3>
+                    <p>Investor confidence rises as markets experience unexpected growth.</p>
+                    <span class="timestamp">Updated: 1 hour ago</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Trending News Section -->
+        <section class="trending">
+            <h2>🚀 Trending Now</h2>
+            <ul>
+                <li><a href="trending1.html">🔥 AI Dominates the Job Market</a></li>
+                <li><a href="trending2.html">🚀 SpaceX’s Latest Mission</a></li>
+                <li><a href="trending3.html">📊 Stock Market Trends</a></li>
+            </ul>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="latest-news">
+            
+            <div class="news-grid">
+                <article>
+                    <h3><a href="https://www.reuters.com/world/europe/pope-francis-critical-condition-due-double-pneumonia-2025-02-23/">Pope Francis in Critical Condition</a></h3>
+                    <p>The Vatican reports Pope Francis is in critical condition due to double pneumonia.</p>
+                    <span class="timestamp">Updated: Just now</span>
+                </article>
+
+                <article>
+                    <h3><a href="https://www.reuters.com/world/europe/russia-launches-largest-drone-attack-ukraine-2025-02-23/">Russia Launches Major Drone Attack on Ukraine</a></h3>
+                    <p>Ukraine reports over 200 drones launched in the largest attack of the war.</p>
+                    <span class="timestamp">Updated: 10 mins ago</span>
+                </article>
+
+                <article>
+                    <h3><a href="https://www.thesun.co.uk/sport/33500003/everton-vs-man-utd-live-score-result-premier-league-updates/">Everton vs. Manchester United Ends in Draw</a></h3>
+                    <p>Everton and Manchester United battled to a thrilling 2-2 draw.</p>
+                    <span class="timestamp">Updated: 30 mins ago</span>
+                </article>
+
+                <article>
+                    <h3><a href="https://www.reuters.com/world/middle-east/hamas-condemns-israel-prisoner-release-delay-2025-02-23/">Hamas Condemns Israel's Postponement of Prisoner Release</a></h3>
+                    <p>Hamas criticizes Israel’s decision to delay prisoner releases.</p>
+                    <span class="timestamp">Updated: 1 hour ago</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pop-up Advertisement -->
+        <div class="popup-ad" id="popupAd">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h3>🎉 Special Offer!</h3>
+                <p>Subscribe today & get exclusive access to premium articles.</p>
+                <a href="subscribe.html" class="subscribe-btn">Subscribe Now</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Ad Section -->
+    <div class="footer-ad">
+        <p>🌟 Get Exclusive Editorials & Expert Opinions! 🌟</p>
+        <a href="subscribe.html" class="subscribe-button">Subscribe Now</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> NextGen Sphere. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Update the current year and date dynamically
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentYear = document.getElementById("current-year");
+            const currentDate = document.getElementById("current-date");
+            if (currentYear) currentYear.textContent = new Date().getFullYear();
+            if (currentDate) currentDate.textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    
+            // Show pop-up ad after 5 seconds
+            const popupAd = document.getElementById("popupAd");
+            if (popupAd) {
+                setTimeout(() => {
+                    popupAd.style.display = "block";
+                }, 5000);
+            }
+        });
+    
+        // Function to close the pop-up ad
+        function closePopup() {
+            const popupAd = document.getElementById("popupAd");
+            if (popupAd) popupAd.style.display = "none";
+        }
+    </script>
+    
+
+</body>
+</html>

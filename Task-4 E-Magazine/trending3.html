@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Market Trends - NextGen Sphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>NextGen Sphere</h1>
+        <div id="current-date"></div>
+
+        <!-- Search Box -->
+        <div class="search-container">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input type="text" id="search-input" placeholder="Search..." aria-label="Search">
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="latest-news.html">Latest News</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="category-header">
+                <li><a href="Tech.html">Tech</a></li>
+                <li><a href="Marketing.html">Marketing</a></li>
+                <li><a href="Finance.html">Finance</a></li>
+                <li><a href="Trends.html">Trends</a></li>
+                <li><a href="Data.html">Data</a></li>
+                <li><a href="Startups.html">Startups</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Article Content -->
+        <section class="article">
+            <h2>📈 Social Market Trends</h2>
+
+            <p>The social media landscape is changing rapidly, with new platforms gaining traction and older ones adapting. Businesses and influencers must stay updated with these changes to maintain engagement and reach.</p>
+
+            <h3>🔹 Key Social Media Trends in 2025</h3>
+            <ul>
+                <li>Short-form video content continues to dominate, with TikTok leading the way.</li>
+                <li>Artificial Intelligence is being used for content personalization.</li>
+                <li>Brands are shifting towards direct-to-consumer models using social commerce.</li>
+                <li>Augmented Reality (AR) is becoming a major marketing tool.</li>
+                <li>Twitter (X) is experimenting with new monetization models.</li>
+                <li>Privacy concerns are reshaping online advertising strategies.</li>
+                <li>Influencer marketing is evolving with micro and nano influencers gaining traction.</li>
+                <li>LinkedIn is expanding beyond job networking to become a content hub.</li>
+                <li>AI-driven chatbots and customer service on social platforms are improving engagement.</li>
+                <li>Live streaming is being used more frequently for product launches and brand engagement.</li>
+            </ul>
+
+            <h3>📊 Social Media Usage Trends (2024)</h3>
+            <table style="width: 100%; border-collapse: collapse; text-align: center; border: 1px solid black;">
+                <tr style="background-color: #f4f4f4;">
+                    <th>Platform</th>
+                    <th>Monthly Active Users (Billions)</th>
+                    <th>Growth Rate</th>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td>3.0</td>
+                    <td>+5%</td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td>2.2</td>
+                    <td>+8%</td>
+                </tr>
+                <tr>
+                    <td>TikTok</td>
+                    <td>1.8</td>
+                    <td>+15%</td>
+                </tr>
+                <tr>
+                    <td>YouTube</td>
+                    <td>2.9</td>
+                    <td>+6%</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td>1.1</td>
+                    <td>+4%</td>
+                </tr>
+            </table>
+
+            
+
+            <a href="index.html" class="btn">⬅ Back to Home</a>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <h2>📩 Subscribe to Our Newsletter</h2>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Ad Section -->
+    <div class="footer-ad">
+        <p style="text-align: center;">🌟 Get Exclusive Editorials & Expert Opinions! 🌟</p>
+        <a href="subscribe.html" class="subscribe-button" style="display: inline-block; text-align: center;">Subscribe Now</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> NextGen Sphere. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Update Current Year & Date
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+        document.getElementById("current-date").textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,698 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Light Gray */
+    color: #333333; /* Charcoal Gray */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1D3557; /* Dark Navy */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* Date Style */
+#current-date {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 14px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    text-underline-offset: 4px; /* Adjust underline spacing */
+}
+
+/* Compact Cool Search Box */
+.search-container {
+    position: absolute;
+    bottom: 25px;
+    right: 70px;
+    background: white;
+    border-radius: 6px;
+    padding: 4px 8px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 150px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    border-radius: 4px;
+    background: #f7f7f7;
+    transition: background 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+    background: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Latest News Section */
+.latest-news {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Individual News Box */
+.news-grid article {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.news-grid article:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Headlines */
+.news-grid h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.news-grid h3 a {
+    text-decoration: none;
+    color: #1D3557; /* Dark Navy */
+    transition: color 0.3s;
+}
+
+.news-grid h3 a:hover {
+    color: #D72638; /* Crimson Red */
+}
+
+/* Paragraph Text */
+.news-grid p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Trending News Section */
+.trending {
+    background: #F8F9FA; /* Light Gray Background */
+    padding: 30px 20px; /* Padding for spacing */
+    text-align: center; /* Center the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a nice effect */
+}
+
+/* Section Title */
+.trending h2 {
+    font-size: 24px;
+    color: #1D3557; /* Dark Navy */
+    margin-bottom: 20px;
+}
+
+/* Trending News List */
+.trending ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Trending News Item */
+.trending ul li {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.trending ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Trending Links */
+.trending ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #D72638; /* Crimson Red */
+    display: block;
+    transition: color 0.3s;
+}
+
+/* Hover Effect for Links */
+.trending ul li a:hover {
+    color: #FF9F1C; /* Warm Orange */
+}
+
+/* Categories Section */
+.categories-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 25px;
+    max-width: 1800px;
+    background-color: #f1f5f9; /* Light gray-blue */
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.97);
+}
+
+
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Increased gap between boxes */
+    padding: 20px;
+}
+
+.category-item {
+    background: #0077b6; /* Deep Blue */
+    color: white;
+    padding: 25px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s;
+    text-align: center;
+    min-width: 180px; /* Bigger boxes */
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-item a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.category-item:hover {
+    background: #023e8a; /* Darker blue */
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Newsletter Signup Section */
+.newsletter {
+    background: #f1f5f9; /* Light gray background */
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* Removes the curved effect */
+}
+
+.newsletter h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #023e8a;
+}
+
+/* Buttons */
+.read-more {
+    background-color: #FFD166; /* Bright Yellow */
+    color: #051b3b; /* Dark Blue */
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.read-more:hover {
+    background-color: #F4A261; /* Warm Orange */
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1D3557; /* Dark Navy */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 10px 10px 0 0;
+}
+.footer-ad {
+    background: #1D3557;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-ad .subscribe-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #E63946;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.footer-ad .subscribe-button:hover {
+    background: #D62828;
+}
+
+
+/* Social Media Links */
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .hero-text {
+        width: 90%;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter input {
+        width: 80%;
+    }
+}
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.marquee-text {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Scroll to Top Button */
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollTop:hover {
+    background: #323232;
+}
+
+.popup-ad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+.popup-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Limits size */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+
+/* Contact Form Section */
+.contact-form {
+    background: white;
+    padding: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group i {
+    margin-right: 5px;
+    color: #2c3e50;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #34495e;
+}
+
+/* About Me Section */
+.about-me {
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    text-align: center;
+}
+
+/* About Us Section */
+.about-us {
+    background: white;
+    padding: 30px;
+    max-width: 1500px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Scroll Button */
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollTop:hover {
+    background: #34495e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Comments Section Styles */
+.comments-section {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.comments-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Textarea for Comment Input */
+.comments-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Submit Button */
+.comments-section button {
+    display: block;
+    width: 100%;
+    background: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.comments-section button:hover {
+    background: #d94328;
+}
+
+/* Comment Status Message */
+#comment-status {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Comments List */
+#comments-list {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Individual Comment */
+#comments-list p {
+    padding: 8px;
+    margin: 5px 0;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NextGen Sphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Smooth Scroll Button -->
+        <button id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name"><i class="fas fa-user"></i> Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message"><i class="fas fa-comment"></i> Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="images/gnanendhar.png" alt="Gnanendhar">
+                <div class="about-text">
+                    <h3>Hi, I'm Gnanendhar! 👋</h3>
+                    <p>
+                        A passionate Java, Python, and UI/UX enthusiast with a keen interest in technology and design. 
+                        I love crafting elegant, functional, and visually appealing digital experiences.
+                    </p>
+                    <p>📧 Email: <a href="mailto:gnanendhar225@gmail.com">gnanendhar225@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h2>About NextGen Sphere</h2>
+            <p>
+                NextGen Sphere is your go-to digital platform for the latest news, insightful articles, and expert opinions across various categories. 
+                We are dedicated to delivering high-quality content that informs, educates, and entertains our readers.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 NextGen Sphere. All rights reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        $(document).ready(function() {
+            $("#scrollTop").hide();
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $("#scrollTop").fadeIn();
+                } else {
+                    $("#scrollTop").fadeOut();
+                }
+            });
+            $("#scrollTop").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+        });
+    </script>
+
+</body>
+</html>
