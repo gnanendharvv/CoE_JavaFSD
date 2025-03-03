@@ -1,0 +1,43 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff; /* Blue background */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+  
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Home on left, Cart on right */
+    align-items: center; /* Align items vertically */
+}
+  
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 550px;
+    /* Styling for the brand name/logo */
+}
+  
+.nav-links {
+    display: flex;
+    gap: 650px; /* Adds spacing between Home and Cart */
+}
+  
+.nav-item {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    /* Styling for navigation links */
+}
+  
+.cart-link {
+    display: flex;
+    align-items: center; /* Aligns cart icon properly */
+    margin-left: auto; /* Pushes Cart to the right */
+}
+  
+.cart-icon {
+    margin-left: 5px; /* Space between "Cart" text and icon */
+}
